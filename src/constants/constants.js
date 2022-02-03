@@ -6,7 +6,7 @@ export const projects = [
   {
     title: 'Message App',
     description: "Instant Messenger as a PWA application, built on top of WhatsApp. Allows you to create a room that can contain multiple people. Supports adding attachments, emoji and converting speech to text to write messages. Implements authentication with Google, Facebook and email address.",
-    image: '/images/messageapp.png',
+    image: '/images/messageapp.jpeg',
     tags: ['React.js', 'Firebase'],
     source: 'https://github.com/puci2020/Message-App',
     visit: 'https://message-app-a30e4.web.app/',
@@ -15,7 +15,7 @@ export const projects = [
   {
     title: 'Fuddi Landing Page',
     description: "This website presents the concept of a mobile application where everyone can sell their own crops and handicraft products. Then users can buy these products at good prices for everyone. It includes a contact form in it and also a blog where new posts can be added after logging in. It is available in two language versions.",
-    image: '/images/fuddilanding.png',
+    image: '/images/fuddilanding.jpeg',
     tags: ['React.js', 'Firebase'],
     source: 'https://github.com/puci2020/Fuddi-Landing-Page',
     visit: 'https://puci2020.github.io/Fuddi-Landing-Page/#/Fuddi-Landing-Page/home',
@@ -24,7 +24,7 @@ export const projects = [
   {
     title: 'KUL Landing Page',
     description: "The site promotes the 2020 reunion event for psychology graduates of the Catholic University of Lublin. It has in it a gallery of photos from the previous event and allows you to sign up for the event through a form. The available admin panel allows you to control who has signed up and check off if they have paid to attend. In addition, it is possible to export the list as a PDF and CSV file.",
-    image: '/images/kulwebsite.png',
+    image: '/images/kulwebsite.jpeg',
     tags: ['HTML', 'JavaScript', 'PHP', 'SASS'],
     source: 'https://github.com/puci2020/KULwebsite',
     visit: 'https://kulwebsite.000webhostapp.com',
@@ -33,7 +33,7 @@ export const projects = [
   {
     title: 'Flight Browser',
     description: "A simple application created for a college course credit. Allows you to search available flights by filling out a form and gives you the option to book a seat and add to cart. Additionally unit tests were written.",
-    image: '/images/flightbrowser.png',
+    image: '/images/flightbrowser.jpeg',
     tags: ['Angular', 'TypeScript', 'SASS'],
     source: 'https://github.com/puci2020/FlightBrowser',
     visit: 'https://puci2020.github.io/FlightBrowser/',
