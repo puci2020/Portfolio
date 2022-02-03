@@ -12,7 +12,7 @@ const Tools =()=>(
     <List>
       {tools.map(({id, name, image}) => (
         <ListItem key={id}>
-          <img src={image} alt={name} width="auto" height="100px"/>
+          <img width="230" height="100" src={image} alt={name} style={{width: 'auto'}}/>
           <ListContainer>
 
             <ListParagraph>{name}</ListParagraph>

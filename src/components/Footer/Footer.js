@@ -22,10 +22,10 @@ const Footer = () => {
         </CompanyContainer>
         <Div3>
         <SocialIcons href="https://github.com/puci2020" target="_blank">
-          <AiFillGithub size="3rem"/>
+          <AiFillGithub size="3rem" alt="Github"/>
         </SocialIcons>
         <SocialIcons href="https://www.linkedin.com/in/adampucicki/" target="_blank">
-          <AiFillLinkedin size="3rem"/>
+          <AiFillLinkedin size="3rem" alt="Linkedin"/>
         </SocialIcons>
         </Div3>
       </SocialIconsContainer>

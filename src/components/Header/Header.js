@@ -11,7 +11,7 @@ const Header = () => (
     <Div1>
       <Link href="/">
         <a style={{display: 'flex', alignItems: 'center', color: 'white'}}>
-          <img src={logo} alt='logo' width='30px' style={{marginRight: 10}}/>
+          <img width="30" height="30" src={logo} alt='logo'  style={{marginRight: 10}}/>
           <Span>
             AdamPucicki
           </Span>
@@ -41,10 +41,10 @@ const Header = () => (
     </Div2>
     <Div3>
       <SocialIcons href="https://github.com/puci2020" target="_blank">
-        <AiFillGithub size="3rem"/>
+        <AiFillGithub size="3rem" alt="Github"/>
       </SocialIcons>
       <SocialIcons href="https://www.linkedin.com/in/adampucicki/" target="_blank">
-        <AiFillLinkedin size="3rem"/>
+        <AiFillLinkedin size="3rem" alt="Linkedin"/>
       </SocialIcons>
     </Div3>
   </Container>
