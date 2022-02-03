@@ -8,7 +8,7 @@ const Technologies = () => (
   <Section id="tech">
     <SectionDivider/>
     <SectionTitle style={{paddingTop: 38}}>Technologies</SectionTitle>
-    <SectionText>I mainly focus on web technologies, but I also know the basics of C#, C++, Java, PHP.</SectionText>
+    <SectionText>I mainly focus on web technologies, but I also know the basics of C#, C++, Java, Python and PHP.</SectionText>
     <List>
       {technologies.map(({id, name, image}) => (
         <ListItem key={id}>
