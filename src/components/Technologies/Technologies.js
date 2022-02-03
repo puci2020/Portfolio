@@ -12,7 +12,7 @@ const Technologies = () => (
     <List>
       {technologies.map(({id, name, image}) => (
         <ListItem key={id}>
-          <img src={image} alt={name} style={{height: 100}}/>
+          <img src={image} alt={name} width="auto" height="100px"/>
           <ListContainer>
 
             <ListParagraph>{name}</ListParagraph>
