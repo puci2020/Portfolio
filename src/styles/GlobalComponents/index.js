@@ -183,7 +183,7 @@ export const SecondaryBtn = styled.button`
 
 export const ButtonBack = styled.div`
   width: ${({alt}) => alt ? '150px' : '262px'};
-  height: ${({alt}) => alt ? '52px' : '64px'};
+  height: ${({alt}) => alt ? '42px' : '64px'};
   border-radius: 50px;
   font-size: ${({alt}) => alt ? '20px' : '24px'};
   font-weight: 600;
@@ -198,7 +198,8 @@ export const ButtonBack = styled.div`
   position: relative;
   overflow: hidden;
   opacity: ${({disabled}) => disabled ? '.5' : '1'};
-
+  border: ${(props) => (props.error ? '2px solid red' : '')};
+  
   @media ${(props) => props.theme.breakpoints.md} {
     width: ${({alt}) => alt ? '150px' : '184px'};
     height: ${({alt}) => alt ? '52px' : '48px'};
@@ -262,6 +263,127 @@ export const ButtonFront = styled.button`
   }
 `
 
+export const Textarea = styled.textarea`
+  width: 100%;
+  height: auto;
+  border: none;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 25px;
+
+  font-size: ${({alt}) => alt ? '14px' : '18px'};
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  background: hsl(200, 31%, 20%);
+  transition: 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  opacity: ${({disabled}) => disabled ? '.5' : '1'};
+  border: ${(props) => (props.error ? '1px solid red' : '')};
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 1;
+    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+  }
+
+  &:disabled {
+    background: linear-gradient(270deg, #00DBD8 0%, #B133FF 100%);
+    opacity: 0.5;
+    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: ${({alt}) => alt ? '20px' : '16px'};
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 14px;
+  }
+`;
+
+export const InputBack = styled.div`
+  width: ${({alt}) => alt ? '100%' : '262px'};
+  height: ${({alt}) => alt ? '42px' : '64px'};
+  margin-bottom: 10px;
+  border-radius: 50px;
+  font-size: ${({alt}) => alt ? '20px' : '24px'};
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  transition: 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  opacity: ${({disabled}) => disabled ? '.5' : '1'};
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    
+    height: ${({alt}) => alt ? '52px' : '48px'};
+    font-size: ${({alt}) => alt ? '20px' : '16px'};
+   
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    
+    height: 32px;
+    font-size: 14px;
+    
+  }
+`;
+
+export const InputFront = styled.input`
+ border: none;
+  border-radius: 50px;
+  color: #fff;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  background: hsl(200, 31%, 20%);
+  opacity: ${({disabled}) => disabled ? '.5' : '1'};
+  transition: .4s ease;
+  font-size: ${({alt}) => alt ? '14px' : '18px'};
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+  box-shadow: ${({disabled}) => disabled ? 'inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)' : 'none'};
+
+  //&:hover {
+  //  opacity: 0;
+  //}
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    opacity: 1;
+    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+  }
+
+  &:disabled {
+    background: linear-gradient(270deg, #00DBD8 0%, #B133FF 100%);
+    opacity: 0.5;
+    box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
+  }
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    font-size: ${({alt}) => alt ? '20px' : '16px'};
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 14px;
+  }
+`;
+
 export const LinkContainer = styled.div`
   margin-left: ${({large}) => large ? '24px' : '16px'};
   transition: 0.3s ease;
@@ -296,3 +418,5 @@ export const LinkIconImg = styled.div`
     height: ${({large}) => large ? '32px' : '16px'};
   }
 `
+
+
