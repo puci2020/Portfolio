@@ -20,6 +20,7 @@ const Footer = () => {
         <CompanyContainer>
           <Slogan>Adam Pucicki © 2022 All rights reserved.</Slogan>
         {/*  comment*/}
+        {/*  comment2*/}
         </CompanyContainer>
         <Div3>
         <SocialIcons href="https://github.com/puci2020" target="_blank">
