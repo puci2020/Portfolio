@@ -7,14 +7,16 @@
     "build": "next build && next export",
     "start": "next start"
   },
-
   "dependencies": {
+    "@hookform/resolvers": "^2.8.8",
     "next": "10.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-hook-form": "^7.27.1",
     "react-icons": "^4.2.0",
     "react-tsparticles": "^1.39.2",
     "styled-components": "^5.3.0",
-    "styled-normalize": "^8.0.7"
+    "styled-normalize": "^8.0.7",
+    "yup": "^0.32.11"
   }
 }

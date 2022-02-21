@@ -199,7 +199,7 @@ export const ButtonBack = styled.div`
   overflow: hidden;
   opacity: ${({disabled}) => disabled ? '.5' : '1'};
   border: ${(props) => (props.error ? '2px solid red' : '')};
-  
+
   @media ${(props) => props.theme.breakpoints.md} {
     width: ${({alt}) => alt ? '150px' : '184px'};
     height: ${({alt}) => alt ? '52px' : '48px'};
@@ -261,7 +261,23 @@ export const ButtonFront = styled.button`
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 14px;
   }
+`;
+
+export const InputWrapper = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 `
+
+export const ErrorSpan = styled.span`
+
+  padding-left: 10px;
+  font-size: 15px;
+  color: red;
+  margin-bottom: 10px;
+
+`;
 
 export const Textarea = styled.textarea`
   width: 100%;
@@ -282,6 +298,7 @@ export const Textarea = styled.textarea`
   overflow: hidden;
   opacity: ${({disabled}) => disabled ? '.5' : '1'};
   border: ${(props) => (props.error ? '1px solid red' : '')};
+
   &:focus {
     outline: none;
   }
@@ -296,6 +313,7 @@ export const Textarea = styled.textarea`
     opacity: 0.5;
     box-shadow: inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3);
   }
+  
 
   @media ${(props) => props.theme.breakpoints.md} {
     font-size: ${({alt}) => alt ? '20px' : '16px'};
@@ -308,9 +326,14 @@ export const Textarea = styled.textarea`
 
 export const InputBack = styled.div`
   width: ${({alt}) => alt ? '100%' : '262px'};
+  //width: 100%;
   height: ${({alt}) => alt ? '42px' : '64px'};
+    //min-height: ${({alt}) => alt ? '42px' : '64px'};
+  //height: auto;
   margin-bottom: 10px;
   border-radius: 50px;
+  //border-radius: 25px;
+    //border-radius: ${({type}) => type === 'textarea' ? 'null' : '50px'};
   font-size: ${({alt}) => alt ? '20px' : '24px'};
   font-weight: 600;
   display: flex;
@@ -320,24 +343,26 @@ export const InputBack = styled.div`
   position: relative;
   overflow: hidden;
   opacity: ${({disabled}) => disabled ? '.5' : '1'};
+  border: ${(props) => (props.error ? '1px solid red' : '')};
+  
 
   @media ${(props) => props.theme.breakpoints.md} {
-    
+
     height: ${({alt}) => alt ? '52px' : '48px'};
     font-size: ${({alt}) => alt ? '20px' : '16px'};
-   
+
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    
+
     height: 32px;
     font-size: 14px;
-    
+
   }
 `;
 
 export const InputFront = styled.input`
- border: none;
+  border: none;
   border-radius: 50px;
   color: #fff;
   display: flex;
